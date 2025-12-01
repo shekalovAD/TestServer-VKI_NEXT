@@ -21,3 +21,46 @@
 /index.php
 # Ignore temp directory.
 /typo3temp/
+# Игнорируем сгенерированные JavaScript файлы
+*.js
+*.js.map
+
+# Но не игнорируем сами конфигурационные файлы
+!package.json
+!package-lock.json
+!yarn.lock
+!tsconfig.json
+
+# Игнорируем папку сборки/дистрибутива
+dist/
+build/
+out/
+lib/
+
+# Игнорируем node_modules
+node_modules/
+
+# Игнорируем кэш
+.cache/
+.tmp/
+
+# Игнорируем настройки IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Игнорируем логи
+*.log
+npm-debug.log*
+
+# Игнорируем системные файлы
+.DS_Store
+Thumbs.db
+
+# Игнорируем переменные окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
